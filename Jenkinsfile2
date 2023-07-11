@@ -1,0 +1,45 @@
+pipeline{
+    agent any 
+    stages{
+        stage("A"){
+            steps{
+                sh '''ls
+                      pwd
+                      cal 2023'''
+            }
+        }
+        stage("B"){
+            steps{
+                git 'https://github.com/ramkrishnatest/website.git'
+            }
+        }
+        stage("C"){
+            steps{
+                echo "========executing A========"
+            }
+        }
+        stage("D"){
+            steps{
+                echo "========executing A========"
+            }
+        }
+        stage("E"){
+            steps{
+                echo "========executing A========"
+            }
+        }
+        
+    }
+    
+    post{
+        always{
+            echo "========always========"
+        }
+        success{
+            echo "========pipeline executed successfully ========"
+        }
+        failure{
+            echo "========pipeline execution failed========"
+        }
+    }
+}
