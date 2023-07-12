@@ -1,0 +1,82 @@
+1. Introduced DevOps and exposed to the world of CI/CD.
+
+2. Jenkins as whole and we have installed Jenkins on Linux(Ubuntu).
+
+3. Deploy a Jenkins war file on a windows instance. (Importance of a war)
+
+4. Done initial configuration of Jenkins using UI.
+
+5. How to configure a plugin for integration.
+
+6. How to integrate Git with Jenkins.
+
+7. Done Frestyle Job Execution using Git (SCM Polling) and Jenkins.
+
+8. Building Maven jobs using Jenkins.
+
+9. Junit integration with Jenkins.
+
+10. Ant Integration.
+	a. Create a Github Repo.
+	b. Add build.xml to the Repo.
+	c. Set the Required Global Configuration for Ant.
+	D. Integration of Ant with Jenkins.
+
+11. Triggering build using automated expressions
+
+12. Running Jenkins As a Container.
+	a. create a docker volume -->  docker volume create jenkins_data
+
+	b. docker run using some port for Jenkins server and it's agent --> docker run -itd -p 8082:8080 --name jenkins --mount source=jenkins_data,target=/var/jenkins_home jenkins/jenkins:lts
+
+13. Remotely Job for a Parameterized Build
+
+	a. Configure a parameterized Build using Jenkins
+	b. Trigger a parameterized build remotely   --> http://44.201.161.208:8080/job/parameter-job//buildWithParameters?token=TCS
+
+14. Global Security Configuration
+
+15. Deploying Application/Website using Jenkins
+
+
+16. Continous Delivery
+
+17. Github Webhooks 
+
+18. Master & Slave Architecture
+	a. Jenkins Uses JNLP (Java Network Launch Protocol) for connecting with it's slave nodes.
+
+19. Jenkins Master & Slave Configurtion
+
+20. CI/CD Pipeline
+
+21. Downstream Job & Upstream Job
+
+22. Pipeline as a Code
+	a. Declarative way of writing Pipeline
+	b. BlueOcean
+	
+23. Declarative Pipeline : 
+	a. Stages b. Steps c. Run shell command d. Varable (Stage Variable & Global/Environment Variables) e. Parameter (String, Choice, bolleanParam) f. Continue e. post Actions
+
+24. Scripted Pipeline :
+
+25. Writing Pipelines in Multiple ways
+
+	a. VS Code
+	b. Pipeline Syantax
+	c. Jenkinsfile
+
+26. Running Pipeline from Github
+
+27. RBAC in Jenkins
+
+28. Backup Jenkins
+	a. Manual Way
+	b. Automated Way (Thinbackup)
+
+29. Jenkins Modes
+
+30. Jenkins Config Files
+
+31. Open Source Jenkins vs Cloudbees Jenkins
